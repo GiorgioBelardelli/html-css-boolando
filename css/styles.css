@@ -14,13 +14,12 @@ header{
     min-height: 50px;
     width: 100%;
     box-shadow: 0px 2px 5px #888888;
-
     position: fixed;
     z-index: 100;
 }
 
 #logo{
-    width: 100px;
+    width: 150px;
 }
 
 .rowHeader{
@@ -32,7 +31,7 @@ header{
 
 .colHeader{
     width: 200px;
-    margin: 10px auto ;
+    margin: 15px auto ;
 }
 
 .colHeader:nth-child(2){
@@ -55,10 +54,87 @@ a{
 }
 
 
+
 /*Stili main*/
 
 main{
-    padding: 200px 0;
+    padding: 150px 0;
+}
+
+.rowMain{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20%;
+    
+}
+
+.colMain{
+    width: calc((100% / 3) - 10px);
+    margin: 10px 5px;
+    position: relative;
+}
+
+.img_prod img{
+    width: 100%;
+}
+
+.label{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    font-size: small;
+}
+
+.labelGreen{
+    background-color: green;
+    left: 40px;
+}
+
+.labelHeart{
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    right: 0px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 30px;
+}
+
+.labelHeart::after{
+   content: ' \2665';
+}
+
+span{
+    color: red;
+}
+
+.sconto{
+    text-decoration: line-through;
+    color: black;
+}
+
+.labelGreen:last-child {
+    left: 0;
+}
+
+.img_prod:hover .labelHeart{
+    color: red;
+}
+
+.hoverImg{
+    position: absolute;
+    width: 100%; 
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.hoverImg:hover{
+    opacity: 1;
 }
 
 
