@@ -1,0 +1,51 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Stili Header*/
+header{
+    background-color: rgb(255, 111, 0);
+    min-height: 50px;
+    box-shadow: 0px 2px 5px #888888;
+   
+}
+
+#logo{
+    width: 100px;
+}
+
+.rowHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colHeader{
+    width: 200px;
+    margin: 10px auto ;
+}
+
+.colHeader:nth-child(2){
+    text-align: center;
+}
+
+.colHeader:nth-child(3){
+    text-align: right;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    color: white;
+    margin: 0 3px;
+    text-decoration: none;
+}
