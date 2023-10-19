@@ -75,9 +75,6 @@ main{
     position: relative;
 }
 
-.img_prod img{
-    width: 100%;
-}
 
 .label{
     position: absolute;
@@ -125,17 +122,22 @@ span{
     color: red;
 }
 
-.hoverImg{
-    position: absolute;
+.img_prod img{
     width: 100%; 
-    left: 0;
-    top: 0;
-    opacity: 0;
 }
 
-.hoverImg:hover{
-    opacity: 1;
+.hoverImg{
+    display: none;
 }
+
+.img_prod:hover img{
+    display: none;
+}
+
+.img_prod:hover .hoverImg{
+    display: block;
+}
+
 
 
 
